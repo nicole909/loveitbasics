@@ -1,20 +1,302 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Love It Basics</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Love It Basics</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #ffffff;
+    }
+
+    header {
+      background: #f7f9fc;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 18px 30px;
+    }
+
+    .nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #1d4ed8;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #333;
+      margin-left: 18px;
+      font-size: 0.95rem;
+    }
+
+    .nav a:hover {
+      color: #1d4ed8;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #eef4ff, #f9fbff);
+      padding: 80px 30px;
+    }
+
+    .hero-content {
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      color: #111827;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 700px;
+      margin: 0 auto 28px;
+      color: #4b5563;
+    }
+
+    .button-group a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 8px;
+      margin: 8px;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background: #1d4ed8;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #1e40af;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #1d4ed8;
+      border: 1px solid #1d4ed8;
+    }
+
+    .btn-secondary:hover {
+      background: #eff6ff;
+    }
+
+    section {
+      padding: 60px 30px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 18px;
+      color: #111827;
+      text-align: center;
+    }
+
+    .intro-text {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      color: #4b5563;
+      font-size: 1.05rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+      margin-top: 35px;
+    }
+
+    .card {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #1d4ed8;
+    }
+
+    .articles {
+      max-width: 700px;
+      margin: 30px auto 0;
+    }
+
+    .articles ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .articles li {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin-bottom: 14px;
+    }
+
+    .articles a {
+      text-decoration: none;
+      color: #111827;
+      font-weight: bold;
+    }
+
+    .articles a:hover {
+      color: #1d4ed8;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 28px 20px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #dbeafe;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .nav a {
+        margin: 8px 12px 0 0;
+      }
+    }
+  </style>
 </head>
-<h1>Welcome to Love It Basics</h1>
+<body>
 
-<p>Simple guides for technology, life, and everyday tools.</p>
+  <header>
+    <div class="nav">
+      <div class="logo">Love It Basics</div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Tech Basics</a>
+        <a href="#">Life Basics</a>
+        <a href="#">Tools I Love</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </header>
 
-<h2>Categories</h2>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Love It Basics</h1>
+      <p>Simple guides for technology, everyday tools, and practical life basics.</p>
+      <div class="button-group">
+        <a href="#" class="btn-primary">Explore Articles</a>
+        <a href="#" class="btn-secondary">Start Here</a>
+      </div>
+    </div>
+  </section>
 
-<ul>
-<li>Tech Basics</li>
-<li>Life Basics</li>
-<li>Money Basics</li>
-<li>Tools I Love</li>
-</ul>
+  <section>
+    <div class="container">
+      <h2>Welcome to Love It Basics</h2>
+      <p class="intro-text">
+        Love It Basics is a simple resource for people who want clear, practical help with
+        everyday technology, useful tools, and life basics. The goal is to make learning
+        feel easier, less overwhelming, and more useful in real life.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Explore the Basics</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Tech Basics</h3>
+          <p>Learn simple technology concepts, devices, apps, and digital skills.</p>
+        </div>
+        <div class="card">
+          <h3>Life Basics</h3>
+          <p>Practical everyday tips for organization, routines, and getting things done.</p>
+        </div>
+        <div class="card">
+          <h3>Money Basics</h3>
+          <p>Beginner-friendly ideas for budgeting, saving, and everyday financial understanding.</p>
+        </div>
+        <div class="card">
+          <h3>Tools I Love</h3>
+          <p>Useful tools, websites, and resources that help simplify life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Start With These Articles</h2>
+      <div class="articles">
+        <ul>
+          <li><a href="#">5 Technology Basics Everyone Should Understand</a></li>
+          <li><a href="#">Simple Digital Tools That Make Everyday Tasks Easier</a></li>
+          <li><a href="#">Back to Basics: Building Better Everyday Habits</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Love It Basics. All rights reserved.</p>
+    <p>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy Policy</a>
+    </p>
+  </footer>
 
 </body>
 </html>
